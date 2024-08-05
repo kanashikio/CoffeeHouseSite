@@ -1,0 +1,536 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #d7ccc8;
+        z-index: 1000;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10%;
+    }
+
+    nav .h2logo h2#logo {
+        font-size: 40px;
+        color: #3e2723;
+    }
+
+    nav .navbar ol {
+        display: flex;
+        list-style: none;
+    }
+
+    nav .navbar ol li {
+        margin-left: 20px;
+    }
+
+    nav .navbar ol li a {
+        text-decoration: none;
+        color: #3e2723;
+        font-size: 18px;
+    }
+
+    #home {
+        height: 100vh;
+        background-color: #efebe9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 10%;
+    }
+
+
+    #home h1 {
+        font-size: 50px;
+        color: #3e2723;
+        margin-bottom: 20px;
+    }
+
+    #home p {
+        font-size: 20px;
+        color: #5d4037;
+        margin-bottom: 40px;
+    }
+
+    #home a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        background: var(--clr);
+        padding: 15px 30px;
+        border-radius: 25px;
+        transition: background 0.3s ease;
+    }
+
+    .navbar a:hover{
+        color: black;
+        letter-spacing: 2px;
+    }
+
+    #home a:hover {
+        background: black;
+    }
+
+    #about {
+        background-color: #efebe9;
+    }
+
+
+    #about h2 {
+        text-align: center;
+        font-size: 36px;
+        color: #3e2723;
+        margin-bottom: 20px;
+    }
+
+    #about .remarks {
+        font-size: 18px;
+        color: #5d4037;
+        text-align: center;
+    }
+
+    #menu {
+        background-color: #efebe9;
+        padding: 110px 7%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #menu .coffee1, #menu .goodies, #menu .sandwich {
+        flex: 1 1 30%;
+        margin-bottom: 20px;
+        margin-left: 3%;
+    }
+
+    #menu h2 {
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+    #menu h3 {
+        font-size: 20px;
+        color: #3e2723;
+        margin-bottom: 10px;
+    }
+
+    #menu p {
+        font-size: 10px;
+        color: #5d4037;
+        margin-bottom: 20px;
+    }
+
+    #location {
+        background-color: #efebe9;
+        padding: 80px 10%;
+    }
+
+    #location .loc, #location .locloc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #location .loc1, #location .loc2, #location .loc3, #location .loc4,
+    #location .loc5, #location .loc6, #location .loc7, #location .loc8 {
+        flex: 1 1 45%;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    #location img {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    #location p {
+        font-size: 16px;
+        color: #5d4037;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 14px;
+        color: #3e2723;
+        padding: 20px 0;
+    }
+
+    /* Responsive Styles */
+    @media (min-width: 1200px){
+        #about{
+            padding: 150px 20%;
+        }
+
+        #about p{
+            font-size: 20px;
+            margin-bottom: 100px;
+        }
+
+        #menu{
+            padding-top: 150px;
+        }
+        #menu h2 {
+            font-size: 30px;
+        }
+
+        #menu h3 {
+            font-size: 28px;
+        }
+
+        #menu p{
+            font-size: 18px;
+        }
+
+        #location{
+            padding-block: 320px;
+        }
+
+        #location .loc1, #location .loc2, #location .loc3, #location .loc4,
+        #location .loc5, #location .loc6, #location .loc7, #location .loc8 {
+            font-size: 20px;
+            margin-left: 30px;
+        }
+
+        #location p {
+            font-size: 18px;
+            margin-left: 35px;
+        }
+
+        footer{
+            font-size: 18px;
+        }
+        
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        #home h1 {
+            font-size: 40px;
+        }
+
+        #home p {
+            font-size: 25px;
+        }
+
+        #about{
+            padding: 200px 20%;
+        }
+
+        #about h2 {
+            font-size: 32px;
+        }
+        #about .remarks{
+            font-size: 22px;
+        }
+        
+        #menu p{
+            font-size: 17px;
+        }
+        #menu h2 {
+            font-size: 28px;
+            margin-top: 2px;
+        }
+
+        #menu h3 {
+            font-size: 23px;
+        }
+
+        #location .loc1, #location .loc2, #location .loc3, #location .loc4,
+        #location .loc5, #location .loc6, #location .loc7, #location .loc8 {
+            flex: 1 1 100%;
+            font-size: 17px;
+        }
+
+        #location p {
+            font-size: 16px;
+            margin-left: 30px;
+        }
+
+        footer{
+            
+            font-size: 12px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        nav {
+            flex-direction: column;
+        }
+
+        nav .h2logo h2#logo {
+            font-size: 30px;
+        }
+
+        nav .navbar ol {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav .navbar ol li {
+            margin: 10px 0;
+        }
+
+        #home h1 {
+            font-size: 36px;
+            margin-top: 200px;
+        }
+
+        #home p {
+            font-size: 20px;
+        }
+
+        #about{
+            padding: 250px 10%;
+        }
+
+        #about .remarks{
+            font-size: 20px;
+ 
+        }
+
+        #about h2 {
+            font-size: 30px;
+            padding-top: 70px;
+
+        }
+
+        #menu{
+            padding-block: 300px 20%;
+        }
+
+        #menu h2 {
+            font-size: 20px;
+        }
+
+        #menu h3 {
+            font-size: 18px;
+        }
+
+        #menu p{
+            font-size: 15px;
+        }
+
+        #location .loc1, #location .loc2, #location .loc3, #location .loc4,
+        #location .loc5, #location .loc6, #location .loc7, #location .loc8 {
+            flex-direction: column;
+        }
+
+        #location{
+            padding: 200px 5%;
+        }
+
+        #location img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        #location h3{
+            font-size: 18px;
+        }
+
+        #location p {
+            display: none;
+        }
+
+        footer{
+            font-size: 15px;
+        }
+    }
+
+    @media (min-width: 577px) and (max-width: 767px) {
+        nav {
+            flex-direction: column;
+        }
+
+        nav .h2logo h2#logo {
+            font-size: 30px;
+        }
+
+        nav .navbar ol {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav .navbar ol li {
+            margin: 10px 0;
+        }
+
+        #home{
+            margin-top: 100px;
+        }
+        #home h1 {
+            font-size: 35px;
+        }
+
+        #home p {
+            font-size: 23px;
+        }
+
+        #home a {
+            font-size: 20px;
+        }
+
+        #about{
+            padding: 250px 20%;
+        }
+
+        #about h2 {
+            font-size: 24px;
+        }
+
+        #about p{
+            font-size: 18px;
+        }
+
+        #menu{
+            padding-block: 250px 20%;
+        }
+
+        #menu h2 {
+            font-size: 22px;
+        }
+
+        #menu h3 {
+            font-size: 20px;
+        }
+
+        #menu p{
+            font-size: 15px;
+        }
+
+        #location .loc1, #location .loc2, #location .loc3, #location .loc4,
+        #location .loc5, #location .loc6, #location .loc7, #location .loc8 {
+            flex-direction: column;
+        }
+
+        #location{
+            padding: 200px 5%;
+        }
+
+        #location img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        #location h3{
+            font-size: 16px;
+        }
+
+        #location p {
+            display: none;
+        }
+        footer{
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width: 576px){
+        nav {
+            flex-direction: column;
+        }
+
+        nav .h2logo h2#logo {
+            font-size: 30px;
+        }
+
+        nav .navbar ol {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav .navbar ol li {
+            margin: 10px 0;
+        }
+
+        #home{
+            margin-top: 150px;
+        }
+
+        #home h1 {
+            font-size: 30px;
+        }
+
+        #home p {
+            font-size: 18px;
+        }
+
+        #about{
+            padding: 250px 20%;
+        }
+
+        #about .remarks{
+            font-size: 18px;
+        }
+
+        #about h2 {
+            font-size: 25px;
+        }
+
+        #menu{
+            padding-block: 260px 20%;
+        }
+
+        #menu h2 {
+            font-size: 20px;
+        }
+
+        #menu h3 {
+            font-size: 18px;
+        }
+
+        #menu p{
+            font-size: 15px;
+        }
+
+        #location .loc1, #location .loc2, #location .loc3, #location .loc4,
+        #location .loc5, #location .loc6, #location .loc7, #location .loc8 {
+            flex: 1 1 100%;
+            font-size: 17px;
+        }
+
+        #location{
+            padding-top: 200px;
+        }
+
+        #location img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        #location h3{
+            font-size: 16px;
+            margin-left: 20px;
+        }
+
+        #location p {
+            display: none;
+        }
+
+        footer{
+            font-size: 12px;
+        }
+    }
+
